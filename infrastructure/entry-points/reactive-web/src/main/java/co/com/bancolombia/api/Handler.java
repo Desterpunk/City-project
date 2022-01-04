@@ -24,7 +24,7 @@ private  final CreateRequestConstructionUseCase useCase;
     }
 
     public Mono<ServerResponse> listenPOSTCreateRequest(ServerRequest serverRequest) {
-        useCase.createRequest(serverRequest.bodyToMono(RequestConstruction.class));
+//        useCase.createRequest(serverRequest);
 
         return ServerResponse.ok().bodyValue("Prueba");
     }

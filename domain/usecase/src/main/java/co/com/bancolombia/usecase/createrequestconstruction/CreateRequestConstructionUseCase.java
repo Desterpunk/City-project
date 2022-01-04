@@ -10,10 +10,10 @@ public class CreateRequestConstructionUseCase {
 
     private final RequestConstructionRepository requestConstructionRepository;
 
-    public Mono<RequestConstruction> createRequest (Mono<RequestConstruction> requestConstruction) {
+    public Mono<RequestConstruction> createRequest (RequestConstruction requestConstruction) {
 
-        System.out.println("Ingreso a use Case");
-        return requestConstructionRepository.createRequest( requestConstruction);
+        System.out.println(requestConstruction);
+        return requestConstructionRepository.createRequest(requestConstruction);
 
     }
 }

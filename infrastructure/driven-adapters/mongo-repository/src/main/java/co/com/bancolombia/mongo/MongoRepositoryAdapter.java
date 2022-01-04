@@ -24,7 +24,7 @@ public class MongoRepositoryAdapter extends AdapterOperations<RequestConstructio
     }
 
     @Override
-    public Mono<RequestConstruction> createRequest(Mono<RequestConstruction>requestConstruction) {
+    public Mono<RequestConstruction> createRequest(RequestConstruction requestConstruction) {
         System.out.println("Mongo repository");
         RequestConstructionDocument request = RequestConstructionDocument.builder().coordinatesX(7).coordinatesY(8).state("Process").build();
         return repository.save(request).map(this::toEntity);

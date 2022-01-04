@@ -5,6 +5,6 @@ import reactor.core.publisher.Mono;
 
 public interface RequestConstructionRepository {
 
-    Mono<RequestConstruction> createRequest(Mono<RequestConstruction> requestConstruction);
+    Mono<RequestConstruction> createRequest(RequestConstruction requestConstruction);
 
 }

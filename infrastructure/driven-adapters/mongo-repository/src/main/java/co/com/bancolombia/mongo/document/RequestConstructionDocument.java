@@ -11,8 +11,7 @@ import java.time.LocalDate;
 @Data
 @Builder(toBuilder = true)
 public class RequestConstructionDocument {
-
-    private TypeConstruction typeConstruction;
+//    private TypeConstruction typeConstruction;
     private Integer coordinatesX;
     private Integer coordinatesY;
     private String  state;
